@@ -15,10 +15,10 @@ function App() {
             <ScorePicker />
             <ButonSubmit />
         </div>
-        {/* <div className="main" id="success" style={'display: none'}>
+        <div className="main" id="success" >
             <ThankYouImage />
             <DynamicText />
-        </div> */}
+        </div>
       </div>
     </>
   )
