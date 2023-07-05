@@ -1,27 +1,17 @@
 import './App.css'
-import Header from './componentes/header'
-import ScorePicker from './componentes/score-picker'
-import ButonSubmit from './componentes/butonSubmit'
-import ThankYouImage from './componentes/thankYouImage'
-import DynamicText from './componentes/dynamicText'
-function App() {
-  
+import { Routes, Route } from 'react-router-dom'
+import Home from './Home'
+import ScoreCheck from './ScoreCheck'
 
-  return (
-    <>
-      <div className="father">
-        <div className="main" id="index" >
-            <Header />
-            <ScorePicker />
-            <ButonSubmit />
-        </div>
-        <div className="main" id="success" >
-            <ThankYouImage />
-            <DynamicText />
-        </div>
-      </div>
-    </>
-  )
-}
+const NotFound = () => (<h1>Not found!😒</h1>)
+
+const App = () => (
+  <Routes>
+    <Route path="/" element={<Home />} />
+      <Route path="ScoreCheck" element={<ScoreCheck />} />
+      <Route path="*" element={<NotFound />} />
+    {/* </Route> */}
+  </Routes>
+)
 
 export default App
