@@ -1,12 +1,12 @@
-import Header from './header'
-import ScorePicker from './score-picker'
-import ButonSubmit from './butonSubmit'
+import Header from './Header'
+import ScorePicker from './ScorePicker'
+import ButtonSubmit from './ButtonSubmit'
 
 const Home = () => (
     <div className="main" id="index" >
         <Header />
         <ScorePicker />
-        <ButonSubmit />
+        <ButtonSubmit />
     </div>
 ) 
 
