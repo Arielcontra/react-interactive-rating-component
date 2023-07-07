@@ -1,5 +1,5 @@
-import ThankYouImage from './componentes/thankYouImage'
-import DynamicText from './componentes/dynamicText'
+import ThankYouImage from './thankYouImage'
+import DynamicText from './dynamicText'
 
 const ScoreCheck = () => (
     <div className="main" id="success" >

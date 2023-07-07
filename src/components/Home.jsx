@@ -1,6 +1,6 @@
-import Header from './componentes/header'
-import ScorePicker from './componentes/score-picker'
-import ButonSubmit from './componentes/butonSubmit'
+import Header from './header'
+import ScorePicker from './score-picker'
+import ButonSubmit from './butonSubmit'
 
 const Home = () => (
     <div className="main" id="index" >

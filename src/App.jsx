@@ -1,16 +1,15 @@
-import './App.css'
 import { Routes, Route } from 'react-router-dom'
-import Home from './Home'
-import ScoreCheck from './ScoreCheck'
+import * as Screen from './components'
+import './App.css'
 
-const NotFound = () => (<h1>Not found!😒</h1>)
 
 const App = () => (
   <Routes>
-    <Route path="/" element={<Home />} />
-      <Route path="ScoreCheck" element={<ScoreCheck />} />
-      <Route path="*" element={<NotFound />} />
-    {/* </Route> */}
+    <Route path="/" element={<Screen.Template />}>
+      <Route index element={<Screen.Home />} />
+      <Route path="score-check" element={<Screen.ScoreCheck />} />
+      <Route path="*" element={<Screen.NotFound />} />
+    </Route>
   </Routes>
 )
 
