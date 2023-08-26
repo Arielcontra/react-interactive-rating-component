@@ -1,15 +1,15 @@
 import { Routes, Route } from 'react-router-dom'
-import {Home, NotFound, ScoreCheck, Template } from './components/index'
+import * as Screen from './components/index.jsx'
 import './App.css'
 import './estilos/reset.css'
 
 
 const App = () => (
   <Routes>
-    <Route path="/" element={<Template />}>
-      <Route index element={<Home />} />
-      <Route path="/scoreCheck" element={<ScoreCheck />} />
-      <Route path="*" element={<NotFound />} />
+    <Route path="/" element={<Screen.Template />}>
+      <Route index element={<Screen.Home />} />
+      <Route path="/scoreCheck" element={<Screen.ScoreCheck />} />
+      <Route path="*" element={<Screen.NotFound />} />
     </Route>
   </Routes>
 )
