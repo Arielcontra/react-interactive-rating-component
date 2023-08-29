@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
-import * as Screen from './components/index.jsx'
+import * as Screen from './components/Index.jsx'
 import './App.css'
 import './estilos/reset.css'
 
